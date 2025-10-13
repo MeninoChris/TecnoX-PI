@@ -1,0 +1,68 @@
+h3 {
+    font-size: 24px;
+    margin-bottom: 30px;
+    color:#0077cc;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    font-size: 16px;
+}
+
+.Login {
+    width: 100%;
+    padding: 12px;
+    background-color: #0077cc;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3 ease;
+}
+
+.Esqueceu {
+    display: block;
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #071118;
+    text-decoration: none;
+    border: none;
+    background-color: white;
+}
+
+
+.login-container {
+    background-color: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    width: 320px;
+    text-align: center;
+}
+
+p {
+    margin-top: -10px;
+    font-size: 20px;
+    text-align: left;
+}
+
+img {
+    margin-bottom: -50px;
+    margin-top: -50px;
+}
+
+.CConta {
+    margin-bottom: 20px;
+    color: #0077cc;
+    text-decoration: none;
+    font-size: 14px;
+    border: none;
+    background-color: white;
+}
+
