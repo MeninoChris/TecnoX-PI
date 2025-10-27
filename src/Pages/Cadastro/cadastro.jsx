@@ -13,12 +13,12 @@ function Cadastro() {
     if (senha !== confirmar) return alert('As senhas não coincidem!')
 
     // 🔍 Verifica se o e-mail já existe no "banco"
-    const checkUser = await fetch(`http://localhost:5000/usuarios?usuario=${usuario}`)
+    const checkUser = await fetch(`${import.meta.env.VITE_API_URL}/usuarios?usuario=${usuario}`)
     const existente = await checkUser.json()
     if (existente.length > 0) return alert('Usuário já cadastrado!')
 
     // 📝 Envia para o bd.json
-    await fetch('http://localhost:5000/usuarios', {
+    await fetch(`${import.meta.env.VITE_API_URL}/usuarios`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ usuario, senha })

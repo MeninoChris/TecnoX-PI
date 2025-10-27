@@ -10,7 +10,7 @@ function Login() {
   const handleLogin = async () => {
     if (!usuario || !senha) return alert('Preencha todos os campos!')
 
-    const res = await fetch(`http://localhost:5000/usuarios?usuario=${usuario}&senha=${senha}`)
+    const res = await fetch(`${import.meta.env.VITE_API_URL}/usuarios?usuario=${usuario}&senha=${senha}`)
     const data = await res.json()
 
     if (data.length === 1) {
