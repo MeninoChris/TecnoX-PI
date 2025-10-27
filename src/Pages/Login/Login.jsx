@@ -2,7 +2,7 @@ import './Login.css'
 import { useState } from 'react'
 import { useNavigate, Link } from 'react-router-dom'
 
-function Login() {
+export default function Login() {
   const [usuario, setUsuario] = useState('')
   const [senha, setSenha] = useState('')
   const navigate = useNavigate()
@@ -49,5 +49,3 @@ function Login() {
     </div>
   )
 }
-
-export default Login
