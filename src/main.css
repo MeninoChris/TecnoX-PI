@@ -1,10 +1,135 @@
-body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Segoe UI', sans-serif;
-    background-color: #e0f0ff;
+/*
+  ==============================================================
+   TecnoX E-commerce - Sistema de Design e Estilos Globais
+  ==============================================================
+*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/* ----- 🎨 SISTEMA DE DESIGN (VARIÁVEIS) ----- */
+:root {
+  /* Cores - Tema Claro (Padrão) */
+  --cor-primaria: #0052ff;
+  --cor-primaria-hover: #0045d6;
+  --cor-fundo: #f8f9fa;
+  --cor-superficie: #ffffff; /* Para cards, headers, etc. */
+  --cor-texto-principal: #213547;
+  --cor-texto-secundario: #5a6268;
+  --cor-borda: #dee2e6;
+
+  /* Tipografia */
+  --fonte-principal: 'Poppins', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --tamanho-fonte-base: 16px;
+
+  /* Layout e UI */
+  --raio-borda: 8px;
+  --sombra-padrao: 0 4px 12px rgba(0, 0, 0, 0.08);
+  --transicao-rapida: 0.25s ease;
 }
 
-* {
-    font: 600 'Poppins'
+/* ----- 🌙 TEMA ESCURO (DARK MODE) ----- */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --cor-fundo: #1a1a1a;
+    --cor-superficie: #242424;
+    --cor-texto-principal: rgba(255, 255, 255, 0.87);
+    --cor-texto-secundario: #9e9e9e;
+    --cor-borda: #424242;
+  }
+}
+
+/* ----- 🛠️ RESET GLOBAL E ESTILOS BASE ----- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--fonte-principal);
+  font-size: var(--tamanho-fonte-base);
+  line-height: 1.6;
+  font-weight: 400;
+  color: var(--cor-texto-principal);
+  background-color: var(--cor-fundo);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+/* Garante que o layout ocupe toda a altura da tela */
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ----- ✍️ TIPOGRAFIA ----- */
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.2;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+h1 { font-size: 2.5rem; }
+h2 { font-size: 2rem; }
+h3 { font-size: 1.75rem; }
+
+p {
+  margin-bottom: 1rem;
+}
+
+a {
+  font-weight: 500;
+  color: var(--cor-primaria);
+  text-decoration: none;
+  transition: color var(--transicao-rapida);
+}
+a:hover {
+  color: var(--cor-primaria-hover);
+  text-decoration: underline;
+}
+
+/* ----- 🔘 ELEMENTOS DE UI (BOTÕES) ----- */
+
+/* Reset para botões que não devem ter estilo de .btn */
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+/* Classe base para botões estilizados */
+.btn {
+  display: inline-block;
+  border-radius: var(--raio-borda);
+  border: 1px solid transparent;
+  padding: 0.75em 1.5em;
+  font-size: 1em;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all var(--transicao-rapida);
+  text-align: center;
+}
+.btn:hover {
+  transform: translateY(-2px);
+}
+.btn:focus,
+.btn:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+/* Modificador de cor para o botão primário */
+.btn-primario {
+  background-color: var(--cor-primaria);
+  color: #ffffff;
+}
+.btn-primario:hover {
+  background-color: var(--cor-primaria-hover);
+  box-shadow: 0 4px 12px rgba(0, 82, 255, 0.3);
 }

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 250" width="250" height="250" role="img" aria-label="Imagem indisponível">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f3f3f3"/>
+      <stop offset="100%" stop-color="#e0e0e0"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="0" width="250" height="250" fill="url(#bg)"/>
+  <g fill="#999">
+    <rect x="35" y="60" width="180" height="120" rx="10" ry="10" fill="#d9d9d9"/>
+    <circle cx="75" cy="100" r="18" fill="#c7c7c7"/>
+    <path d="M65 150 L95 115 L160 170 L185 145 L215 180 L35 180 Z" fill="#cfcfcf"/>
+  </g>
+  <text x="125" y="215" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#333">Sem imagem</text>
+</svg>

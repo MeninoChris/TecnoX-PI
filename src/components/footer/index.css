@@ -1,0 +1,182 @@
+.footer-container {
+    width: 100%;
+    margin-top: auto;
+    padding: 3rem 0 2rem 0;
+    border-top: 1px solid #E0E0E0;
+    font-size: 0.85rem;
+    color: #000000;
+    background-color: #FEFEFE;
+    font-family: 'Poppins', sans-serif;
+}
+
+.footer-content {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 2.5rem;
+}
+
+/* Desktop - Informações à esquerda */
+.footer-info-desktop {
+    display: block;
+    text-align: left;
+}
+
+.footer-info-desktop p {
+    margin-bottom: 0.5rem;
+    line-height: 1.6;
+}
+
+.footer-info-desktop .address {
+    margin-top: 1rem;
+    font-style: italic;
+    color: #666666;
+}
+
+/* Desktop - Ícones de pagamento à direita */
+.payment-methods-desktop {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.payment-methods-desktop .payment-icon {
+    height: 24px;
+    width: auto;
+    max-width: 40px;
+    object-fit: contain;
+    border-radius: 4px;
+    transition: transform 0.2s ease;
+    cursor: pointer;
+}
+
+.payment-methods-desktop .payment-icon:hover {
+    transform: translateY(-2px);
+}
+
+/* Mobile - Esconder por padrão */
+.footer-info-mobile,
+.payment-methods-mobile {
+    display: none;
+}
+
+.footer-bottom {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 1.8rem 2rem 0 2rem;
+    text-align: center;
+    border-top: 1px solid #E0E0E0;
+    font-size: 0.75rem;
+    color: #000000;
+}
+
+/* Responsividade para mobile */
+@media (max-width: 768px) {
+    .footer-container {
+        padding: 2.5rem 0 1.5rem 0;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 2rem;
+        padding: 0 1.5rem;
+        margin-bottom: 2rem;
+    }
+
+    /* Esconder versão desktop */
+    .footer-info-desktop,
+    .payment-methods-desktop {
+        display: none;
+    }
+
+    /* Mostrar versão mobile */
+    .footer-info-mobile {
+        display: block;
+        order: 1;
+        text-align: center;
+    }
+
+    .footer-info-mobile p {
+        margin-bottom: 0.75rem;
+        font-size: 0.9rem;
+        line-height: 1.7;
+    }
+
+    .footer-info-mobile .address {
+        margin-top: 1.25rem;
+        font-size: 0.85rem;
+        color: #777777;
+        font-style: italic;
+    }
+
+    .payment-methods-mobile {
+        display: flex;
+        order: 2;
+        justify-content: center;
+        gap: 1.25rem;
+        margin-top: 0.5rem;
+    }
+
+    .payment-methods-mobile .payment-icon-mobile {
+        height: 28px;
+        width: auto;
+        max-width: 45px;
+        object-fit: contain;
+        border-radius: 4px;
+        transition: transform 0.2s ease;
+        cursor: pointer;
+    }
+
+    .payment-methods-mobile .payment-icon-mobile:hover {
+        transform: translateY(-2px);
+    }
+
+    .footer-bottom {
+        padding: 1.5rem 1.5rem 0 1.5rem;
+        font-size: 0.8rem;
+        line-height: 1.5;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-container {
+        padding: 2rem 0 1.25rem 0;
+    }
+
+    .footer-content {
+        padding: 0 1rem;
+        gap: 1.75rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .footer-info-mobile p {
+        font-size: 0.85rem;
+        margin-bottom: 0.6rem;
+    }
+
+    .footer-info-mobile .address {
+        font-size: 0.8rem;
+        margin-top: 1rem;
+    }
+
+    .payment-methods-mobile {
+        gap: 1rem;
+        flex-wrap: wrap;
+    }
+
+    .payment-methods-mobile .payment-icon-mobile {
+        height: 24px;
+        max-width: 38px;
+    }
+    
+    .footer-bottom {
+        padding: 1.25rem 1rem 0 1rem;
+        font-size: 0.75rem;
+    }
+}
+
