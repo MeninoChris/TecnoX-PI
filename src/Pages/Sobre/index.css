@@ -1,0 +1,127 @@
+/* ==============================================================
+   Página: Sobre Nós
+   Estrutura com texto em cima e blocos de contato abaixo
+============================================================== */
+
+.sobre-nos-page {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+/* --- Container Principal --- */
+.sobre-nos-container {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 8rem 2rem;
+}
+
+/* --- Seção de Introdução --- */
+.intro-section {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.intro-section h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.intro-section p {
+    font-size: 1.1rem;
+    color: #666666;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* --- Seção de Detalhes (Texto + Contatos) --- */
+.details-section {
+    display: flex;
+    flex-direction: column; /* texto em cima, contatos embaixo */
+    gap: 3rem;
+}
+
+/* --- Descrição da Empresa --- */
+.company-description {
+    order: -1; /* garante que vem primeiro visualmente */
+}
+
+.company-description p {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #333333;
+}
+
+.company-description p:not(:last-child) {
+    margin-bottom: 1.5rem;
+}
+
+/* --- Blocos de Contato --- */
+.contact-info {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.info-block {
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    padding: 1.5rem;
+    flex: 1 1 280px;
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.info-block:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+/* Ícones e Textos */
+.info-block svg {
+    flex-shrink: 0;
+    margin-top: 4px;
+    color: #333;
+    width: 24px;
+    height: 24px;
+}
+
+.info-text h2 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 0.4rem;
+}
+
+.info-text p {
+    font-size: 1rem;
+    color: #333333;
+    line-height: 1.5;
+}
+
+/* --- Responsividade --- */
+@media (max-width: 820px) {
+    .sobre-nos-container {
+        padding: 4rem 1.5rem;
+    }
+
+    .contact-info {
+        flex-direction: column;
+    }
+
+    .info-block {
+        flex: 1 1 100%;
+    }
+
+    .intro-section h1 {
+        font-size: 2rem;
+    }
+
+    .intro-section p {
+        font-size: 1rem;
+    }
+}

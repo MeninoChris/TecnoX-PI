@@ -34,7 +34,7 @@ const Home = () => {
                         <div className="hero-content">
                             <h1>PLaca de video <br /> RTX 5090</h1>
                             {/* CTA leva para a listagem de Smartwatches */}
-                            <Link to="/smartwatch" className="hero-cta-text" style={{ textDecoration: 'none' }}>Compre agora</Link>
+                            <Link to="/" className="cta-button" style={{ textDecoration: 'none' }}>Compre agora</Link>
                         </div>
                         <div className="hero-image1">
                             <img src="/images-home/Placa5090.png" alt="Placa de Video 5090" />

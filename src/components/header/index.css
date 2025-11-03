@@ -9,36 +9,32 @@
 /* ---  Estrutura Principal --- */
 .header-container {
     /* Usando position: relative para que o .search-form se posicione corretamente */
-    position: relative;
+    position: absolute;
     width: 100%;
     background-color: #ffffff;
     color: #000000; /* texto padrão escuro para tema claro */
     z-index: 100;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-    position: sticky;
+
     /* Mantém o header fixo no topo */
     top: 0;
 }
 
 .header-content {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  overflow: visible; /* evita corte */
-  position: relative;
-  height: 80px; /* garante área visível do header */
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 1.25rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .logo {
-  height: auto;
-  width: 200px;
-  display: block;
-  position: relative;
-  top: 0;
-  margin: 0;
-  padding: 0;
-  flex-shrink: 0;
-  transform: none !important; /* cancela qualquer translateY */
+    width: auto;
+    display: block;
+    top: 4;
+    position: bottom;
+    position: absolute;
 }
 
 /* --- Navegação Principal (Desktop) --- */
@@ -81,7 +77,7 @@
 /* --- Ícones --- */
 .header-icons {
     display: flex;
-    gap: 2.5rem;
+    gap: 1.5rem;
     align-items: center;
 }
 

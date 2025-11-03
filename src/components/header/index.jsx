@@ -82,8 +82,8 @@ const Header = () => {
                 <Link to="/" style={{ textDecoration: 'none' }}>
                     <img
                         className="logo"
-                        src="/Tecno.png"
-                        alt="TecnoX"
+                        src="/logo2.png"
+                        alt="LOSSANTOS"
                     />
                 </Link>
 
@@ -92,7 +92,7 @@ const Header = () => {
                     <Link to="/">Home</Link>
                     <Link to="/smartwatch">Produtos</Link>
                     <Link to="/acessorios">Perifericos</Link>
-                    <Link to="/sobrenos">Sobre nós</Link>
+                    <Link to="/sobre">Sobre nós</Link>
                     {showAdmin && <Link to="/admin/products">Admin</Link>}
                 </nav>
 
@@ -141,7 +141,7 @@ const Header = () => {
                 aria-modal="true"
             >
                 <div className="mobile-menu-header">
-                    <img className="logo" src="/Tecno.png" alt="TecnoX" />
+                    <img className="logo" src="/logo2.png" alt="LOSSANTOS" />
                     <button className="close-mobile" aria-label="Fechar menu" onClick={() => setMobileOpen(false)}>
                         <HamburgerIcon open={true} />
                     </button>
