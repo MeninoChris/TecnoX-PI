@@ -30,7 +30,7 @@ function Cadastro() {
 
   return (
     <div className="login-container">
-      <img src="./public/Logo.png" alt='Logo' width="180" height="180" />
+      <img src="./public/Images/Tecno.png" alt='Logo' width="180" height="180" />
       <h3>SEJA BEM-VINDO</h3>
 
       <p>Usuário</p>

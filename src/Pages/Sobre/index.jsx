@@ -55,8 +55,8 @@ Aqui, acreditamos que tecnologia não é só produto, é experiência. Por isso,
                             <ClockIcon />
                             <div className="info-text">
                                 <h2>Horários</h2>
-                                <p>Segunda a sexta: 9h00 às 22h00</p>
-                                <p>Sábado e domingo: 9h00 às 21h00</p>
+                                <p>Segunda a sexta: 8h00 às 17h00</p>
+                                <p>Sábado e domingo: 9h00 às 17h30</p>
                             </div>
                         </div>
                     </div>

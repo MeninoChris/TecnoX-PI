@@ -6,6 +6,7 @@
   width: 100%;
   display: flex;
   align-items: center;
+  justify-content: center; /* <<< ADICIONE ISSO */
 }
 
 .carousel-track {
@@ -13,8 +14,13 @@
   overflow-x: auto;
   scroll-behavior: smooth;
   scrollbar-width: none; /* Firefox */
-  gap: 2rem;
-  padding: 1rem 0;
+  gap: 1.25rem;
+  padding: 1rem 0; /* Padding vertical (em cima/baixo) */
+
+  /* 1. Garante que o track preencha o novo wrapper gigante */
+  width: 95%; 
+
+  /* 2. REMOVA qualquer 'width: calc(...)' fixo que possa ter aqui */
 }
 
 .carousel-track::-webkit-scrollbar {

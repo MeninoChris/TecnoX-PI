@@ -9,12 +9,13 @@
 /* ---  Estrutura Principal --- */
 .header-container {
     /* Usando position: relative para que o .search-form se posicione corretamente */
-    position: absolute;
+    position: sticky;
+    top: 0;
     width: 100%;
     background-color: #ffffff;
     color: #000000; /* texto padrão escuro para tema claro */
     z-index: 100;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 
     /* Mantém o header fixo no topo */
     top: 0;
@@ -23,24 +24,33 @@
 .header-content {
     max-width: 1280px;
     margin: 0 auto;
-    padding: 1.25rem 2rem;
+    padding: 1.5rem 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 .logo {
+    display: block;
+    position: absolute;
+    text-decoration: none; /* Garante que não tenha sublinhado se for um Link */
+    transition: transform 0.2s ease;
+}
+.logo:hover {
+    transform: scale(1.05); /* Efeito de hover sutil */
+}
+
+/* Assumindo que sua logo é uma imagem */
+.logo img {
+    height: 36px;
     width: auto;
     display: block;
-    top: 4;
-    position: bottom;
-    position: absolute;
 }
 
 /* --- Navegação Principal (Desktop) --- */
 .navigation {
     display: flex;
-    gap: 2.5rem;
+    gap: 3rem;
     /* Aumenta o espaçamento entre os links */
 }
 
@@ -48,7 +58,7 @@
     color: #000000; /* links pretos no tema claro */
     /* Um branco um pouco mais suave */
     text-decoration: none;
-    font-size: 0.95rem;
+    font-size: 1.05rem;
     font-weight: 500;
     transition: color 0.2s ease;
     position: relative;
@@ -77,7 +87,7 @@
 /* --- Ícones --- */
 .header-icons {
     display: flex;
-    gap: 1.5rem;
+    gap: 1.75rem;
     align-items: center;
 }
 
@@ -85,6 +95,12 @@
 .header-icons a {
     color: #000000; /* ícones pretos */
     transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.header-icons a svg,
+.search-button svg {
+    width: 26px;
+    height: 26px;
 }
 
 .header-icons a:hover {
@@ -118,19 +134,19 @@
     display: flex;
     gap: 0.5rem;
     margin-top: 0.5rem;
-    background-color: #242424;
+    background-color: #ffffff;
     /* Fundo para destacar do conteúdo da página */
     padding: 0.75rem;
     border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 .search-form input {
     padding: 0.6rem 1rem;
     border-radius: 6px;
-    border: 1px solid #444;
-    background-color: #333;
-    color: #ffffff;
+    border: 1px solid #ccc;
+    background-color: #f8f9fa;
+    color: #000000;
     outline: none;
     font-size: 1rem;
     transition: border-color 0.2s ease;

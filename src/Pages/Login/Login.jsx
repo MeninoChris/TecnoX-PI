@@ -23,7 +23,7 @@ export default function Login() {
 
   return (
     <div className="login-container">
-      <img src="./public/Logo.png" alt='Logo' width="180" height="180"/>
+      <img src="./public/logo2.png" alt='Logo' width="180" height="180"/>
       <h3>SEJA BEM-VINDO</h3>
 
       <p>Usuário</p>
@@ -44,7 +44,7 @@ export default function Login() {
 
       <button className="Login" onClick={handleLogin}>LOGIN</button>
       <button className="CConta">
-        <Link to="/">Não possui uma conta? Crie uma aqui</Link>
+        <Link to="/cadastro">Não possui uma conta? Crie uma aqui</Link>
       </button>
     </div>
   )

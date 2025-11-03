@@ -4,12 +4,13 @@
     width: 100%;
     background-color: #ffffff;
     color: #333; /* Cor de texto padrão escura */
+    overflow-x: hidden; /* <-- ADIÇÃO CRUCIAL AQUI */
 }
 
 /* Renomeado de .main-content para .section-container */
 /* Este é o container que centraliza o conteúdo */
 .section-container {
-    max-width: 1280px;
+    max-width: 1920px;
     margin: 0 auto;
     padding: 4rem 2rem; /* Padding vertical para espaçar seções */
     width: 100%;
@@ -30,7 +31,7 @@
 }
 
 .hero-main {
-    background-color: #70888a; /* Fundo preto como no Figma */
+    background-color: #93bbbb; /* Fundo preto como no Figma */
     color: #FFFFFF; /* Garante que o texto seja branco */
 }
 
@@ -44,6 +45,12 @@
     font-weight: 600;
     line-height: 1.2;
     margin-bottom: 1.5rem;
+
+    text-shadow: 
+        -1px -1px 0 #000,  /* Sombra cima-esquerda */
+         1px -1px 0 #000,  /* Sombra cima-direita */
+        -1px  1px 0 #000,  /* Sombra baixo-esquerda */
+         1px  1px 0 #000; /* Sombra baixo-direita */
 }
 
 .hero-content h6 {
@@ -51,6 +58,12 @@
     font-weight: 300;
     line-height: 1.2;
     margin-bottom: 1.5rem;
+
+    text-shadow: 
+        -1px -1px 0 #000,
+         1px -1px 0 #000,
+        -1px  1px 0 #000,
+         1px  1px 0 #000;
 }
 
 /* Novo estilo para o texto "Compre agora" */
