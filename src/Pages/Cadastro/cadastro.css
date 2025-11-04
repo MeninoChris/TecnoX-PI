@@ -25,7 +25,7 @@
   box-shadow: var(--box-shadow);
   width: 100%;
   max-width: 380px;
-  margin: 2rem auto;
+  margin: 8rem auto;
   text-align: center;
 }
 
@@ -118,3 +118,19 @@
     margin-bottom: 1.5rem;
   }
 }
+
+/*  Botão de já possui uma conta e texto em cima do input */
+
+.LLogin {
+  margin-bottom: 20px;
+    color: #0077cc;
+    text-decoration: none;
+    font-size: 14px;
+    border: none;
+    background-color: white;
+}
+
+p {
+  color: rgb(122, 121, 121);
+}
+

@@ -13,7 +13,7 @@ h3 {
     margin-bottom: 30px;
     color:#0077cc;
     font-weight: bold;
-    
+
 }
 
 input {
@@ -75,4 +75,12 @@ img {
 }
 
 
+}
+
+.background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #C1DCDC;
 }

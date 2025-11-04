@@ -22,6 +22,7 @@ export default function Login() {
   }
 
   return (
+  <div className="background">
     <div className="login-container">
       <img src="./public/logo2.png" alt='Logo' width="180" height="180"/>
       <h3>SEJA BEM-VINDO</h3>
@@ -47,5 +48,6 @@ export default function Login() {
         <Link to="/cadastro">Não possui uma conta? Crie uma aqui</Link>
       </button>
     </div>
+  </div>
   )
 }
