@@ -90,8 +90,8 @@ const Header = () => {
 
                 <nav className="navigation">
                     <Link to="/">Home</Link>
-                    <Link to="/smartwatch">Produtos</Link>
-                    <Link to="/acessorios">Periféricos</Link>
+                    <Link to="/produtos">Produtos</Link>
+                    <Link to="/perifericos">Periféricos</Link>
                     <Link to="/sobre">Sobre nós</Link>
                     {showAdmin && <Link to="/admin/products">Admin</Link>}
                 </nav>
@@ -148,8 +148,8 @@ const Header = () => {
                 </div>
                 <nav className="mobile-navigation" onClick={() => setMobileOpen(false)}>
                     <Link to="/">Home</Link>
-                    <Link to="/smartwatch">Produtos</Link>
-                    <Link to="/acessorios">Periféricos</Link>
+                    <Link to="/produtos">Produtos</Link>
+                    <Link to="/perifericos">Periféricos</Link>
                     <Link to="/sobrenos">Sobre nós</Link>
                     {showAdmin && <Link to="/admin/products">Admin</Link>}
                     <Link to="/carrinho">Carrinho</Link>
