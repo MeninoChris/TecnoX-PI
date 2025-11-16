@@ -47,16 +47,22 @@ const Header = () => {
     const [searchOpen, setSearchOpen] = useState(false);
     const [searchValue, setSearchValue] = useState('');
     const [mobileOpen, setMobileOpen] = useState(false);
+    const [userMenuOpen, setUserMenuOpen] = useState(false);
+    const [currentUser, setCurrentUser] = useState(null);
+    const [showAdmin, setShowAdmin] = useState(false);
 
-    // Admin visibility (hide link for non-admin)
-    let showAdmin = false;
-    try {
-        const usuarioLogadoRaw = localStorage.getItem('usuarioLogado');
-        const usuarioLogado = usuarioLogadoRaw ? JSON.parse(usuarioLogadoRaw) : null;
-        showAdmin = !!usuarioLogado && isAdminEmail(usuarioLogado.email);
-    } catch (e) {
-        showAdmin = false;
-    }
+    // Admin visibility e dados do usuário logado
+    useEffect(() => {
+        try {
+            const usuarioLogadoRaw = localStorage.getItem('usuarioLogado');
+            const usuarioLogado = usuarioLogadoRaw ? JSON.parse(usuarioLogadoRaw) : null;
+            setCurrentUser(usuarioLogado);
+            setShowAdmin(!!usuarioLogado && isAdminEmail(usuarioLogado.email));
+        } catch (e) {
+            setCurrentUser(null);
+            setShowAdmin(false);
+        }
+    }, []);
 
     const toggleSearch = () => setSearchOpen(!searchOpen);
     const handleSearchChange = (e) => setSearchValue(e.target.value);
@@ -93,7 +99,7 @@ const Header = () => {
                     <Link to="/produtos">Produtos</Link>
                     <Link to="/perifericos">Periféricos</Link>
                     <Link to="/sobre">Sobre nós</Link>
-                    {showAdmin && <Link to="/admin/products">Admin</Link>}
+                    {showAdmin && <Link to="/admin/produtos">Admin</Link>}
                 </nav>
 
                 <div className="header-icons">
@@ -113,9 +119,19 @@ const Header = () => {
                     <Link to="/carrinho">
                         <BagIcon />
                     </Link>
-                    <Link to="/login">
-                        <UserIcon />
-                    </Link>
+                    {currentUser ? (
+                        <button
+                            type="button"
+                            className="user-button"
+                            onClick={() => setUserMenuOpen((v) => !v)}
+                        >
+                            <UserIcon />
+                        </button>
+                    ) : (
+                        <Link to="/login">
+                            <UserIcon />
+                        </Link>
+                    )}
                 </div>
             </div>
 
@@ -151,12 +167,31 @@ const Header = () => {
                     <Link to="/produtos">Produtos</Link>
                     <Link to="/perifericos">Periféricos</Link>
                     <Link to="/sobrenos">Sobre nós</Link>
-                    {showAdmin && <Link to="/admin/products">Admin</Link>}
+                    {showAdmin && <Link to="/admin/produtos">Admin</Link>}
                     <Link to="/carrinho">Carrinho</Link>
                     <Link to="/login">Minha conta</Link>
                 </nav>
             </div>
             {mobileOpen && <div className="mobile-backdrop" onClick={() => setMobileOpen(false)} />}
+
+            {currentUser && userMenuOpen && (
+                <div className="user-menu">
+                    <div className="user-menu-header">
+                        <span className="user-email">{currentUser.email}</span>
+                    </div>
+                    <button
+                        type="button"
+                        className="user-menu-item"
+                        onClick={() => {
+                            localStorage.removeItem('logado');
+                            localStorage.removeItem('usuarioLogado');
+                            window.location.href = '/login';
+                        }}
+                    >
+                        Sair
+                    </button>
+                </div>
+            )}
         </header>
     );
 };

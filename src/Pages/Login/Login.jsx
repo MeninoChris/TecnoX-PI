@@ -1,6 +1,7 @@
 import './Login.css'
 import { useState } from 'react'
 import { useNavigate, Link } from 'react-router-dom'
+import { toast } from 'react-hot-toast'
 
 export default function Login() {
   const [usuario, setUsuario] = useState('')
@@ -8,16 +9,27 @@ export default function Login() {
   const navigate = useNavigate()
 
   const handleLogin = async () => {
-    if (!usuario || !senha) return alert('Preencha todos os campos!')
+    if (!usuario || !senha) {
+      toast.error('Preencha todos os campos!')
+      return
+    }
 
     const res = await fetch(`${import.meta.env.VITE_API_URL}/usuarios?usuario=${usuario}&senha=${senha}`)
     const data = await res.json()
 
     if (data.length === 1) {
       localStorage.setItem('logado', 'true')
-      navigate('/home')
+      try {
+        const user = data[0] || { usuario }
+        localStorage.setItem('usuarioLogado', JSON.stringify({
+          id: user.id,
+          email: user.usuario || usuario,
+        }))
+      } catch {}
+      toast.success('Login realizado com sucesso!')
+      navigate('/')
     } else {
-      alert('Usuário ou senha incorretos!')
+      toast.error('Usuário ou senha incorretos!')
     }
   }
 

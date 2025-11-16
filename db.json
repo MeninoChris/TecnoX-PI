@@ -14,6 +14,345 @@
       "id": "9b00",
       "usuario": "matheus@gmail.com",
       "senha": "1234"
+    },
+    {
+      "id": "admin-1",
+      "usuario": "teste@teste.com",
+      "senha": "1234"
+    }
+  ],
+  "produtos": [
+    {
+      "id": "1",
+      "segment": "perifericos",
+      "name": "Akko Tac75 HE Magnetico",
+      "price": 503.99,
+      "category": "teclados",
+      "imgSrc": "/images-home/TacHE75.png",
+      "description": "Teclado magnético de alta performance com switches HE e layout 75%.",
+      "specs": [
+        "Layout 75%",
+        "Switches magnéticos HE",
+        "Conexão USB-C",
+        "Iluminação RGB personalizável"
+      ]
+    },
+    {
+      "id": "2",
+      "segment": "perifericos",
+      "name": "Akko MonsGeek FUN60",
+      "price": 367.47,
+      "category": "teclados",
+      "imgSrc": "/images-home/Moonsgeek6.png",
+      "description": "Teclado compacto 60% com keycaps de alta qualidade.",
+      "specs": [
+        "Layout 60%",
+        "Keycaps em PBT",
+        "Iluminação RGB",
+        "Estrutura sólida em alumínio"
+      ]
+    },
+    {
+      "id": "3",
+      "segment": "perifericos",
+      "name": "AJAZZ AK820 Mecanico",
+      "price": 381.08,
+      "category": "teclados",
+      "imgSrc": "/images-home/AjazzK.png",
+      "description": "Teclado mecânico para gamers que buscam custo-benefício.",
+      "specs": [
+        "Switches mecânicos",
+        "Layout compacto",
+        "Keycaps resistentes",
+        "Compatível com Windows e Mac"
+      ]
+    },
+    {
+      "id": "4",
+      "segment": "perifericos",
+      "name": "AULA HERO 68HE Magnetico",
+      "price": 587.18,
+      "category": "teclados",
+      "imgSrc": "/images-home/Hero.png",
+      "description": "Teclado 68% com tecnologia magnética HE e alta precisão.",
+      "specs": [
+        "Layout 68%",
+        "Tecnologia HE",
+        "Construção robusta",
+        "RGB com múltiplos efeitos"
+      ]
+    },
+    {
+      "id": "5",
+      "segment": "perifericos",
+      "name": "Logitech G435 LIGHTSPEED",
+      "price": 499.98,
+      "category": "headsets",
+      "imgSrc": "/images-home/Logi.png",
+      "description": "Headset gamer sem fio leve e confortável.",
+      "specs": [
+        "Tecnologia LIGHTSPEED",
+        "Áudio estéreo de alta qualidade",
+        "Compatível com PC e consoles",
+        "Design leve e confortável"
+      ]
+    },
+    {
+      "id": "6",
+      "segment": "perifericos",
+      "name": "Binnune BW06 HEADSET 2,4Ghz",
+      "price": 288.07,
+      "category": "headsets",
+      "imgSrc": "/images-home/Binune.png",
+      "description": "Headset sem fio 2,4GHz com baixa latência.",
+      "specs": [
+        "Conexão 2,4GHz",
+        "Microfone com redução de ruído",
+        "Bateria de longa duração",
+        "Almofadas confortáveis"
+      ]
+    },
+    {
+      "id": "7",
+      "segment": "perifericos",
+      "name": "NUBWO G06 HEADSET GAMER",
+      "price": 358.09,
+      "category": "headsets",
+      "imgSrc": "/images-home/Nub.png",
+      "description": "Headset gamer com som imersivo para jogos competitivos.",
+      "specs": [
+        "Som surround",
+        "Microfone ajustável",
+        "Compatível com múltiplas plataformas",
+        "Design ergonômico"
+      ]
+    },
+    {
+      "id": "8",
+      "segment": "perifericos",
+      "name": "Baseus GH02 Gaming",
+      "price": 718.67,
+      "category": "headsets",
+      "imgSrc": "/images-home/Baseus.png",
+      "description": "Headset premium com graves potentes e alta definição.",
+      "specs": [
+        "Drivers de alta fidelidade",
+        "Iluminação RGB",
+        "Construção durável",
+        "Conforto para longas sessões"
+      ]
+    },
+    {
+      "id": "9",
+      "segment": "perifericos",
+      "name": "Attack Shark X11 Base",
+      "price": 207.86,
+      "category": "mouses",
+      "imgSrc": "/images-home/Shark.png",
+      "description": "Mouse gamer preciso para FPS e MOBA.",
+      "specs": [
+        "Sensor de alta precisão",
+        "Vários níveis de DPI",
+        "Design ergonômico",
+        "Iluminação LED"
+      ]
+    },
+    {
+      "id": "10",
+      "segment": "perifericos",
+      "name": "MousePad Dragão",
+      "price": 56.08,
+      "category": "mousepads",
+      "imgSrc": "/images-home/Dragão.png",
+      "description": "Mousepad temático com superfície lisa para precisão.",
+      "specs": [
+        "Superfície de tecido",
+        "Base emborrachada",
+        "Estampa de dragão",
+        "Tamanho médio"
+      ]
+    },
+    {
+      "id": "11",
+      "segment": "perifericos",
+      "name": "MousePad Exco Sports",
+      "price": 246.97,
+      "category": "mousepads",
+      "imgSrc": "/images-home/Pad.png",
+      "description": "Mousepad esportivo para movimentos rápidos.",
+      "specs": [
+        "Superfície speed",
+        "Base antiderrapante",
+        "Bordas costuradas",
+        "Ideal para e-sports"
+      ]
+    },
+    {
+      "id": "12",
+      "segment": "perifericos",
+      "name": "Fone de Ouvido BUDS 6 Xiaomi",
+      "price": 206.99,
+      "category": "fones",
+      "imgSrc": "/images-home/Buds.png",
+      "description": "Fones TWS com cancelamento de ruído da Xiaomi.",
+      "specs": [
+        "Bluetooth",
+        "Case de carregamento",
+        "Bateria de longa duração",
+        "Design compacto"
+      ]
+    },
+     {
+      "id": "13",
+      "segment": "produtos",
+      "name": "Monitor Gamer AOC 24G2 144Hz",
+      "price": 949.90,
+      "category": "monitores",
+      "imgSrc": "/images-products/Monitor3.png",
+      "description": "Monitor 144Hz com painel IPS para jogos.",
+      "specs": ["24″", "144Hz", "1ms", "IPS"]
+    },
+    {
+      "id": "14",
+      "segment": "produtos",
+      "name": "PC Gamer Completo Ryzen 5 + GTX 1660",
+      "price": 3899.90,
+      "category": "computadores",
+      "imgSrc": "/images-products/PC1.png",
+      "description": "PC gamer completo com ótimo desempenho.",
+      "specs": ["Ryzen 5", "GTX 1660 6GB", "16GB RAM", "SSD 480GB"]
+    },
+    {
+      "id": "15",
+      "segment": "produtos",
+      "name": "Placa de Vídeo RTX 4060 8GB",
+      "price": 1899.00,
+      "category": "placas-de-video",
+      "imgSrc": "/images-products/Placa1.png",
+      "description": "Placa de vídeo RTX 4060 de alto desempenho.",
+      "specs": ["8GB GDDR6", "DLSS 3", "Ray Tracing"]
+    },
+    {
+      "id": "16",
+      "segment": "produtos",
+      "name": "Fonte Corsair CV650 80 Plus Bronze",
+      "price": 369.90,
+      "category": "fontes",
+      "imgSrc": "/images-products/Fonte1.png",
+      "description": "Fonte confiável com certificação 80 Plus Bronze.",
+      "specs": ["650W", "80 Plus Bronze", "Proteção contra surtos"]
+    },
+    {
+      "id": "17",
+      "segment": "produtos",
+      "name": "Gabinete Gamer Redragon Wheel Jack",
+      "price": 289.90,
+      "category": "gabinetes",
+      "imgSrc": "/images-products/Gabinete3.png",
+      "description": "Gabinete elegante com ótimo fluxo de ar.",
+      "specs": ["Vidro temperado", "Suporte a watercooler", "Ventoinhas RGB"]
+    },
+
+    {
+      "id": "18",
+      "segment": "produtos",
+      "name": "Monitor BrazilPC 31.5″ Curvo 75Hz",
+      "price": 949.99,
+      "category": "monitores",
+      "imgSrc": "/images-products/Monitor1.png",
+      "description": "Monitor grande, curvo, ideal para imersão.",
+      "specs": ["31,5″", "75 Hz", "Curvo", "Full HD"]
+    },
+    {
+      "id": "19",
+      "segment": "produtos",
+      "name": "Monitor Gamer 27″ 144 Hz Full HD",
+      "price": 1299.00,
+      "category": "monitores",
+      "imgSrc": "/images-products/Monitor2.png",
+      "description": "Monitor 27 polegadas com alta taxa de atualização.",
+      "specs": ["27″", "144 Hz", "1 ms", "LED"]
+    },
+
+    {
+      "id": "20",
+      "segment": "produtos",
+      "name": "PC Gamer Skill Ryzen 7 5700G 16GB SSD 1TB",
+      "price": 3446.99,
+      "category": "computadores",
+      "imgSrc": "/images-products/PC2.png",
+      "description": "PC gamer completo com processador Ryzen 7 e gráficos integrados.",
+      "specs": ["Ryzen 7 5700G", "16GB RAM", "SSD 1TB", "Vídeo integrado"]
+    },
+    {
+      "id": "21",
+      "segment": "produtos",
+      "name": "PC Gamer Neologic Ryzen 5 5600GT 16GB",
+      "price": 2499.99,
+      "category": "computadores",
+      "imgSrc": "/images-products/PC3.png",
+      "description": "PC gamer econômico com ótimo desempenho para jogos.",
+      "specs": ["Ryzen 5 5600GT", "16GB RAM", "SSD 480GB", "Placa-mãe A520"]
+    },
+    {
+      "id": "22",
+      "segment": "produtos",
+      "name": "NVIDIA GeForce RTX 3060 12GB",
+      "price": 1949.99,
+      "category": "placas-de-video",
+      "imgSrc": "/images-products/Placa2.png",
+      "description": "Placa de vídeo RTX 3060 com 12GB GDDR6.",
+      "specs": ["12GB", "192-bit", "Ray Tracing"]
+    },
+    {
+      "id": "23",
+      "segment": "produtos",
+      "name": "Placa de Vídeo GTX 750 2GB",
+      "price": 299.80,
+      "category": "placas-de-video",
+      "imgSrc": "/images-products/Placa3.png",
+      "description": "Placa de vídeo básica para jogos leves.",
+      "specs": ["2GB", "GDDR5", "105W TDP"]
+    },
+    {
+      "id": "24",
+      "segment": "produtos",
+      "name": "Fonte Corsair RM750e 750W 80 Plus Gold",
+      "price": 849.00,
+      "category": "fontes",
+      "imgSrc": "/images-products/Fonte3.png",
+      "description": "Fonte modular de alta eficiência para builds exigentes.",
+      "specs": ["750W", "80 Plus Gold", "Totalmente modular"]
+    },
+    {
+      "id": "25",
+      "segment": "produtos",
+      "name": "Fonte Corsair CX750F RGB 750W",
+      "price": 799.00,
+      "category": "fontes",
+      "imgSrc": "/images-products/Fonte2.png",
+      "description": "Fonte RGB com 750W e certificação Bronze.",
+      "specs": ["750W", "80 Plus Bronze", "Full modular", "RGB"]
+    },
+    {
+      "id": "26",
+      "segment": "produtos",
+      "name": "Gabinete BrazilPC Gamer Black (lateral vidro)",
+      "price": 529.00,
+      "category": "gabinetes",
+      "imgSrc": "/images-products/Gabinete1.png",
+      "description": "Gabinete mid-tower com lateral em vidro temperado.",
+      "specs": ["ATX", "4 baias", "Vidro temperado"]
+    },
+    {
+      "id": "27",
+      "segment": "produtos",
+      "name": "Gabinete C3Tech MT-G80BK",
+      "price": 349.90,
+      "category": "gabinetes",
+      "imgSrc": "/images-products/Gabinete2.png",
+      "description": "Gabinete econômico e resistente para sua build gamer.",
+      "specs": ["Mid Tower", "Suporta ATX", "2 portas USB frontais"]
     }
   ]
 }

@@ -1,0 +1,131 @@
+/* Estilos básicos reaproveitados do carrinho antigo (ajuste conforme seu design) */
+.cart-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #0b0b0f;
+  color: #f5f5f5;
+}
+
+.cart-container {
+  flex: 1;
+  padding: 40px 16px;
+}
+
+.cart-layout {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.cart-items-section {
+  background: #15151f;
+  border-radius: 12px;
+  padding: 16px;
+}
+
+.cart-header,
+.cart-item {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr auto;
+  align-items: center;
+  gap: 12px;
+}
+
+.cart-header {
+  border-bottom: 1px solid #2a2a3a;
+  padding-bottom: 8px;
+  margin-bottom: 8px;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.cart-item {
+  padding: 12px 0;
+  border-bottom: 1px solid #222234;
+}
+
+.product-details {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.product-details img {
+  width: 56px;
+  height: 56px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.item-price,
+.item-subtotal {
+  font-weight: 500;
+}
+
+.quantity-selector input {
+  width: 64px;
+  padding: 4px 6px;
+  border-radius: 6px;
+  border: 1px solid #44445a;
+  background: #0b0b0f;
+  color: #f5f5f5;
+}
+
+.remove-item-btn {
+  background: transparent;
+  border: none;
+  color: #ff4d4f;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cart-summary-section {
+  background: #15151f;
+  border-radius: 12px;
+  padding: 16px;
+  height: fit-content;
+}
+
+.cart-summary-section h2 {
+  margin-bottom: 12px;
+}
+
+.summary-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.summary-row.total {
+  font-weight: 700;
+}
+
+.checkout-btn {
+  margin-top: 12px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 10px 14px;
+  border-radius: 8px;
+  background: #2563eb;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+@media (max-width: 900px) {
+  .cart-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .cart-header,
+  .cart-item {
+    grid-template-columns: 1fr;
+  }
+}

@@ -108,6 +108,28 @@
     transform: scale(1.1);
 }
 
+/* Botão do usuário (perfil) */
+.user-button {
+    background: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    color: #000000;
+    transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.user-button svg {
+    width: 26px;
+    height: 26px;
+}
+
+.user-button:hover {
+    color: #646cff;
+    transform: scale(1.1);
+}
+
 /* --- Botão e Formulário de Busca --- */
 .search-button {
     /* Reset do estilo padrão de botão para que pareça um ícone */
@@ -171,6 +193,53 @@
     background-color: #535bf2;
 }
 
+/* Dropdown de usuário (perfil) */
+.user-menu {
+    position: absolute;
+    top: 72px;
+    right: 2rem;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    border: 1px solid #e5e7eb;
+    min-width: 220px;
+    padding: 0.75rem 0.75rem 0.5rem;
+    z-index: 101;
+}
+
+.user-menu-header {
+    margin-bottom: 0.5rem;
+    padding-bottom: 0.4rem;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.user-email {
+    display: block;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #111827;
+    word-break: break-all;
+}
+
+.user-menu-item {
+    width: 100%;
+    margin-top: 0.3rem;
+    background: #f3f4f6;
+    border-radius: 8px;
+    border: 1px solid #e5e7eb;
+    padding: 0.5rem 0.75rem;
+    font-size: 0.9rem;
+    text-align: left;
+    cursor: pointer;
+    color: #b91c1c;
+    font-weight: 500;
+    transition: background 0.15s ease, transform 0.1s ease;
+}
+
+.user-menu-item:hover {
+    background: #fee2e2;
+    transform: translateY(-1px);
+}
 
 /* --- Responsividade --- */
 @media (max-width: 992px) {

@@ -1,0 +1,131 @@
+.product-detail-page {
+  min-height: 100vh;
+  background-color: #f9f9f9;
+  padding: 40px 20px;
+}
+
+.product-detail-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.status-text {
+  text-align: center;
+  color: #666;
+  font-size: 1rem;
+}
+
+.status-text.error {
+  color: #c0392b;
+}
+
+.product-detail-card {
+  display: grid;
+  grid-template-columns: 1.1fr 1.2fr;
+  gap: 40px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  padding: 30px;
+}
+
+.product-detail-image {
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.product-detail-image img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.product-detail-info h1 {
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+  color: #1a1a1a;
+}
+
+.product-detail-price {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.product-detail-category {
+  font-size: 0.95rem;
+  color: #777;
+  margin-bottom: 15px;
+}
+
+.product-detail-description {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.product-detail-specs {
+  margin-bottom: 20px;
+}
+
+.product-detail-specs h2 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.product-detail-specs ul {
+  list-style: disc;
+  padding-left: 20px;
+  color: #444;
+}
+
+.product-detail-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.product-detail-actions .add-to-cart-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+}
+
+.product-detail-actions .add-to-cart-btn:hover {
+  background-color: #0056b3;
+  transform: scale(1.02);
+}
+
+.product-detail-actions .back-btn {
+  background-color: #e0e0e0;
+  color: #333;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+}
+
+.product-detail-actions .back-btn:hover {
+  background-color: #cccccc;
+}
+
+@media (max-width: 768px) {
+  .product-detail-card {
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+}

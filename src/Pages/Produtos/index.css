@@ -1,3 +1,4 @@
+/* Copiado de Products/index.css com ajuste de cor do preço mais escura */
 /* Hero Section */
 .products-hero {
   background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
@@ -195,7 +196,7 @@
 .product-price {
   font-size: 1.3rem;
   font-weight: 700;
-  color: #007bff;
+  color: #333;
   margin-bottom: 12px;
 }
 

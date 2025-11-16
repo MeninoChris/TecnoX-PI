@@ -1,6 +1,7 @@
 import './cadastro.css'
 import { useState } from 'react'
 import { useNavigate, Link } from 'react-router-dom'
+import { toast } from 'react-hot-toast'
 
 function Cadastro() {
   const [usuario, setUsuario] = useState('')
@@ -9,13 +10,23 @@ function Cadastro() {
   const navigate = useNavigate()
 
   const handleCadastro = async () => {
-    if (!usuario || !senha) return alert('Preencha todos os campos!')
-    if (senha !== confirmar) return alert('As senhas não coincidem!')
+    if (!usuario || !senha) {
+      toast.error('Preencha todos os campos!')
+      return
+    }
+
+    if (senha !== confirmar) {
+      toast.error('As senhas não coincidem!')
+      return
+    }
 
     // 🔍 Verifica se o e-mail já existe no "banco"
     const checkUser = await fetch(`${import.meta.env.VITE_API_URL}/usuarios?usuario=${usuario}`)
     const existente = await checkUser.json()
-    if (existente.length > 0) return alert('Usuário já cadastrado!')
+    if (existente.length > 0) {
+      toast.error('Usuário já cadastrado!')
+      return
+    }
 
     // 📝 Envia para o bd.json
     await fetch(`${import.meta.env.VITE_API_URL}/usuarios`, {
@@ -24,7 +35,7 @@ function Cadastro() {
       body: JSON.stringify({ usuario, senha })
     })
 
-    alert('Cadastro realizado com sucesso!')
+    toast.success('Cadastro realizado com sucesso!')
     navigate('/login')
   }
 

@@ -1,4 +1,5 @@
 import React, { useRef } from "react";
+import { Link } from "react-router-dom";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import "./carrosel.css";
 
@@ -67,11 +68,8 @@ const ProductsCarousel = ({ products }) => {
       <div className="carousel-track" ref={scrollRef}>
         {products.map((product) => (
           <div key={product.id} className="carousel-item">
-            {/* Corrigido o link para ser dinâmico.
-              Ajuste "/produto/" para a URL correta do seu site.
-            */}
-            <a 
-              href={`/produto/${product.id}`} // <-- MUDANÇA (Bug corrigido)
+            <Link 
+              to={`/produto/${product.id}`}
               className="product-card-link"
             >
               <div className="product-image-container">
@@ -79,7 +77,7 @@ const ProductsCarousel = ({ products }) => {
               </div>
               <h3>{product.name}</h3>
               <p className="price">{product.price}</p>
-            </a>
+            </Link>
           </div>
         ))}
       </div>
